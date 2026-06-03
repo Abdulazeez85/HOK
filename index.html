@@ -12,6 +12,11 @@
 <!-- NAV -->
 <nav>
   <div class="logo">HOK<span>.</span> Computers</div>
+  <button class="mobile-menu" aria-label="Toggle navigation" type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#services">Services</a></li>
@@ -115,7 +120,7 @@
 
   <div class="products-grid">
 
-    <div class="product-card">
+    <div class="product-card" data-brand="HP">
       <div class="product-img bg1">
         💻
         <span class="badge-hot">🔥 Hot</span>
@@ -131,7 +136,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-brand="Dell">
       <div class="product-img bg2">
         💻
         <span class="badge-new">NEW</span>
@@ -147,7 +152,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-brand="Lenovo">
       <div class="product-img bg3">
         💻
       </div>
@@ -162,7 +167,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-brand="Apple">
       <div class="product-img bg4">
         💻
         <span class="badge-new">NEW</span>
@@ -178,7 +183,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-brand="HP">
       <div class="product-img bg5">
         💻
         <span class="badge-hot">💰 Deal</span>
@@ -194,7 +199,7 @@
       </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card" data-brand="Dell">
       <div class="product-img bg6">
         💻
       </div>
@@ -291,24 +296,24 @@
       </div>
     </div>
 
-    <div class="contact-form">
+    <form class="contact-form" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label>First Name</label>
-          <input type="text" placeholder="e.g. Ibrahim">
+          <input type="text" name="firstName" placeholder="e.g. Ibrahim" required>
         </div>
         <div class="form-group">
           <label>Last Name</label>
-          <input type="text" placeholder="e.g. Yusuf">
+          <input type="text" name="lastName" placeholder="e.g. Yusuf" required>
         </div>
       </div>
       <div class="form-group">
         <label>Email Address</label>
-        <input type="email" placeholder="you@example.com">
+        <input type="email" name="email" placeholder="you@example.com" required>
       </div>
       <div class="form-group">
         <label>What are you interested in?</label>
-        <select>
+        <select name="interest" required>
           <option>Buying a Laptop</option>
           <option>Web Development</option>
           <option>Graphic Design</option>
@@ -319,10 +324,10 @@
       </div>
       <div class="form-group">
         <label>Message</label>
-        <textarea placeholder="Tell us more about what you need..."></textarea>
+        <textarea name="message" placeholder="Tell us more about what you need..." required></textarea>
       </div>
-      <button class="btn-submit">Send Message 🚀</button>
-    </div>
+      <button class="btn-submit" type="submit">Send Message 🚀</button>
+    </form>
   </div>
 </section>
 

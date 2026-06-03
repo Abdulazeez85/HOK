@@ -1,9 +1,50 @@
 // Filter tabs
 const filterTabs = document.querySelectorAll('.filter-tab');
+const productCards = document.querySelectorAll('.product-card');
+const mobileMenu = document.querySelector('.mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+const contactForm = document.querySelector('.contact-form');
+
+const filterProducts = (brand) => {
+  productCards.forEach(card => {
+    const cardBrand = card.dataset.brand;
+    const isVisible = brand === 'All' || cardBrand === brand;
+    card.style.display = isVisible ? '' : 'none';
+  });
+};
+
 filterTabs.forEach(tab => {
   tab.addEventListener('click', function() {
     filterTabs.forEach(t => t.classList.remove('active'));
     this.classList.add('active');
+    filterProducts(this.textContent.trim());
+    if (navLinks?.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      mobileMenu?.classList.remove('open');
+    }
+  });
+});
+
+mobileMenu?.addEventListener('click', () => {
+  navLinks?.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+});
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const submitButton = contactForm.querySelector('.btn-submit');
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+    submitButton.textContent = 'Message Sent!';
+    submitButton.disabled = true;
+    setTimeout(() => {
+      submitButton.textContent = 'Send Message 🚀';
+      submitButton.disabled = false;
+      contactForm.reset();
+    }, 2200);
   });
 });
 
