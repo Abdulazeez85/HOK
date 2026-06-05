@@ -1,344 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOK Computers – Home of Khayr | Ilorin, Kwara State</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOK Computers — Home of Khayr | Ilorin, Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">HOK<span>.</span> Computers</div>
-  <button class="mobile-menu" aria-label="Toggle navigation" type="button">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
-  </ul>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="WhatsApp Image 2026-05-31 at 7.24.14 PM.jpeg" alt="">
+      <span class="logo-wordmark">HOK <em>Computers</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="index.html#services" class="nav-link">Services</a></li>
+      <li><a href="index.html#repair" class="nav-link">Repairs</a></li>
+      <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme"><span class="theme-icon">☀️</span></button>
+      <button class="cart-btn" id="cartToggle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <div class="hero-badge"><span></span> Ilorin's Tech Hub — Est. 2020</div>
-    <h1>Your <em>Digital</em><br>Partner in<br>Kwara State</h1>
-    <p>HOK Computers brings world-class laptops, web solutions, and tech services to Ilorin. Powered by innovation, driven by excellence.</p>
-    <div class="hero-actions">
-      <a href="#products" class="btn-primary">Shop Laptops →</a>
-      <a href="#services" class="btn-outline">Our Services</a>
-    </div>
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb orb1"></div>
+    <div class="grid-overlay"></div>
   </div>
-
-  <div class="hero-visual">
-    <div class="hero-card">
-      <div class="hero-img">
-        <img src="WhatsApp Image 2026-05-31 at 7.24.14 PM.jpeg" alt="">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span>Ilorin's Premium Tech Store</div>
+      <h1 class="hero-title">Premium Tech.<br/><span>Delivered in<br/>Kwara State.</span></h1>
+      <p class="hero-sub">Laptops, phones, and accessories. Quality guaranteed. WhatsApp-first ordering from the Heart of Ilorin.</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn-primary">Shop All Products</a>
+        <a href="https://wa.me/2348114550145" target="_blank" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L.054 23.447a.5.5 0 00.61.61l5.595-1.478A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.802 9.802 0 01-5.031-1.385l-.36-.214-3.733.985.997-3.617-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Chat on WhatsApp
+        </a>
       </div>
       <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-num">50+</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">50+</div>
-          <div class="stat-label">Laptops Sold</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">5★</div>
-          <div class="stat-label">Rated</div>
-        </div>
+        <div class="stat"><span class="stat-n">100+</span><span class="stat-l">Clients</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-n">100+</span><span class="stat-l">Devices Sold</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-n">CAC</span><span class="stat-l">Registered</span></div>
       </div>
     </div>
+    <div class="hero-visual">
+      <div class="hero-img-card">
+        <img src="https://res.cloudinary.com/da7jzmy2g/image/upload/v1780626286/hokp_lzhjha.jpg" />
+        <div class="img-caption"><span class="dot-green"></span>HOK</div>
+      </div>
+      <div class="chip chip-a"><span>🔒</span><div><b>Warranty</b><small>Guaranteed</small></div></div>
+      <div class="chip chip-b"><span>⚡</span><div><b>Fast Delivery</b><small>Ilorin & beyond</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured-section" id="featured">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow">Featured</p>
+        <h2 class="section-title">Top Picks</h2>
+      </div>
+      <a href="products.html" class="view-all-link">View all products →</a>
+    </div>
+    <div class="products-grid" id="featuredGrid"></div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services">
-  <div class="services-header">
-    <div class="section-tag">What We Do</div>
-    <h2 class="section-title">Tech Solutions<br>You Can Trust</h2>
-    <p>From premium laptops, affordable smartphones to full digital transformation — we've got your tech needs covered in Ilorin and beyond.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">🖥️</div>
-      <h3>Laptop Sales</h3>
-      <p>Brand new and fairly used laptops from top brands like HP, Dell, Lenovo, and Apple. Quality guaranteed with warranty support.</p>
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="eyebrow">What We Do</p>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">From hardware to digital solutions — HOK has you covered.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon">🌐</div>
-      <h3>Web Development</h3>
-      <p>Professional websites built with HTML, PHP, CSS, and Bootstrap. From business sites to full e-commerce platforms.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🎨</div>
-      <h3>Graphic Design</h3>
-      <p>Eye-catching logos, brand identity, flyers, and digital graphics. We make your brand look unforgettable.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">📣</div>
-      <h3>Digital Marketing</h3>
-      <p>Social media strategies, content creation, and online campaigns that grow your business and expand your reach.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🔧</div>
-      <h3>Laptop Repairs</h3>
-      <p>Fast and affordable repairs for all laptop brands. Screen replacement, battery, OS installation, and more.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🎓</div>
-      <h3>Tech Training</h3>
-      <p>Empowering students and entrepreneurs in Kwara State with practical digital skills and computer literacy programs.</p>
+    <div class="services-grid">
+      <div class="service-card reveal"><div class="svc-icon">🖥️</div><h3>Laptop Sales</h3><p>New and UK-used laptops from HP, Dell, Lenovo, Apple. Every unit verified.</p><a href="products.html?cat=laptop" class="svc-link">Browse →</a></div>
+      <div class="service-card reveal"><div class="svc-icon">📱</div><h3>Phone Sales</h3><p>iPhones, Samsung Galaxy, Tecno and more. Original devices with full warranty.</p><a href="products.html?cat=phone" class="svc-link">Browse →</a></div>
+      <div class="service-card reveal"><div class="svc-icon">🔧</div><h3>Laptop Repairs</h3><p>Screen, battery, keyboard, motherboard. Fast turnaround in Ilorin.</p><a href="#repair" class="svc-link">Book →</a></div>
+      <div class="service-card reveal"><div class="svc-icon">💾</div><h3>Software Install</h3><p>Windows, Office, antivirus, drivers — all set up and ready to go.</p><a href="https://wa.me/2348114550145?text=I+need+software+installation." target="_blank" class="svc-link">Get Quote →</a></div>
+      <div class="service-card reveal"><div class="svc-icon">⚙️</div><h3>Hardware Upgrade</h3><p>RAM, SSD, cooling upgrades. Breathe new life into your machine.</p><a href="https://wa.me/2348114550145?text=I+need+a+hardware+upgrade." target="_blank" class="svc-link">Upgrade →</a></div>
+      <div class="service-card reveal"><div class="svc-icon">🌐</div><h3>Web Development</h3><p>Professional websites for businesses across Nigeria. Fast, modern, mobile-first.</p><a href="https://wa.me/2348114550145?text=I+need+a+website." target="_blank" class="svc-link">Get Quote →</a></div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products">
-  <div class="products-header">
-    <div>
-      <div class="section-tag">Our Store</div>
-      <h2 class="section-title">Featured Laptops</h2>
-    </div>
-    <div class="filter-tabs">
-      <button class="filter-tab active">All</button>
-      <button class="filter-tab">HP</button>
-      <button class="filter-tab">Dell</button>
-      <button class="filter-tab">Lenovo</button>
-      <button class="filter-tab">Apple</button>
-    </div>
-  </div>
-
-  <div class="products-grid">
-
-    <div class="product-card" data-brand="HP">
-      <div class="product-img bg1">
-        💻
-        <span class="badge-hot">🔥 Hot</span>
+<!-- REPAIR -->
+<section class="repair-section" id="repair">
+  <div class="container">
+    <div class="repair-wrap">
+      <div class="repair-info reveal">
+        <p class="eyebrow">Device Repair</p>
+        <h2 class="section-title">Book a Repair</h2>
+        <p class="section-sub">Fill out the form and we'll respond on WhatsApp within the hour.</p>
+        <ul class="repair-list">
+          <li><span>✓</span>Laptops & Desktops</li>
+          <li><span>✓</span>Phones & Tablets</li>
+          <li><span>✓</span>Screen Replacement</li>
+          <li><span>✓</span>Data Recovery</li>
+          <li><span>✓</span>Free Diagnosis</li>
+        </ul>
       </div>
-      <div class="product-info">
-        <div class="product-brand">HP</div>
-        <div class="product-name">HP ProBook 450 G9</div>
-        <div class="product-specs">Intel Core i5 12th Gen · 8GB RAM · 512GB SSD · 15.6" FHD</div>
-        <div class="product-footer">
-          <div class="product-price">₦285,000 <small>New · In Stock</small></div>
-          <button class="btn-cart">🛒</button>
+      <div class="form-card reveal">
+        <div class="form-group"><label>Full Name</label><input type="text" id="repairName" placeholder="e.g. Ibrahim Yusuf" /></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" id="repairPhone" placeholder="08012345678" /></div>
+        <div class="form-group"><label>Device Type</label>
+          <select id="repairDevice"><option value="">Select device…</option><option>Laptop</option><option>Desktop PC</option><option>Phone</option><option>Tablet</option></select>
         </div>
+        <div class="form-group"><label>Problem Description</label><textarea id="repairProblem" rows="4" placeholder="Describe the issue…"></textarea></div>
+        <button class="btn-wa full" onclick="submitRepair()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L.054 23.447a.5.5 0 00.61.61l5.595-1.478A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.802 9.802 0 01-5.031-1.385l-.36-.214-3.733.985.997-3.617-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Send via WhatsApp
+        </button>
       </div>
-    </div>
-
-    <div class="product-card" data-brand="Dell">
-      <div class="product-img bg2">
-        💻
-        <span class="badge-new">NEW</span>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Dell</div>
-        <div class="product-name">Dell Inspiron 15 3520</div>
-        <div class="product-specs">Intel Core i7 12th Gen · 16GB RAM · 1TB SSD · 15.6" FHD</div>
-        <div class="product-footer">
-          <div class="product-price">₦360,000 <small>New · In Stock</small></div>
-          <button class="btn-cart">🛒</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card" data-brand="Lenovo">
-      <div class="product-img bg3">
-        💻
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Lenovo</div>
-        <div class="product-name">ThinkPad E14 Gen 4</div>
-        <div class="product-specs">Intel Core i5 12th Gen · 8GB RAM · 256GB SSD · 14" FHD IPS</div>
-        <div class="product-footer">
-          <div class="product-price">₦245,000 <small>UK Used · Available</small></div>
-          <button class="btn-cart">🛒</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card" data-brand="Apple">
-      <div class="product-img bg4">
-        💻
-        <span class="badge-new">NEW</span>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Apple</div>
-        <div class="product-name">MacBook Air M2</div>
-        <div class="product-specs">Apple M2 · 8GB RAM · 256GB SSD · 13.6" Liquid Retina</div>
-        <div class="product-footer">
-          <div class="product-price">₦780,000 <small>New · Limited</small></div>
-          <button class="btn-cart">🛒</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card" data-brand="HP">
-      <div class="product-img bg5">
-        💻
-        <span class="badge-hot">💰 Deal</span>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">HP</div>
-        <div class="product-name">HP Pavilion 15</div>
-        <div class="product-specs">AMD Ryzen 5 5500U · 8GB RAM · 512GB SSD · 15.6" FHD IPS</div>
-        <div class="product-footer">
-          <div class="product-price">₦195,000 <small>UK Used · Good Condition</small></div>
-          <button class="btn-cart">🛒</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card" data-brand="Dell">
-      <div class="product-img bg6">
-        💻
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Dell</div>
-        <div class="product-name">Dell XPS 13 Plus</div>
-        <div class="product-specs">Intel Core i7 12th Gen · 16GB RAM · 512GB SSD · 13.4" OLED Touch</div>
-        <div class="product-footer">
-          <div class="product-price">₦520,000 <small>New · In Stock</small></div>
-          <button class="btn-cart">🛒</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-content">
-    <div class="section-tag">Our Story</div>
-    <h2 class="section-title">Born in Ilorin,<br>Built for the Future</h2>
-    <p>HOK Computers — Home of Khayr — was founded with one mission: to make premium tech accessible to students, businesses, and entrepreneurs right here in Kwara State.</p>
-    <p>Our founder, Adeyemi Ahmed Abiodun, is a MBBS student at the University of Ilorin who believes technology and healthcare go hand-in-hand. Incorporated with the Corporate Affairs Commission in 2020, HOK Computers has grown into a trusted name in Ilorin's tech scene.</p>
-    <div class="about-highlights">
-      <div class="highlight">
-        <div class="highlight-icon">⚡</div>
-        <div>
-          <h4>CAC Registered Business</h4>
-          <p>Officially incorporated with the Federal Government of Nigeria</p>
-        </div>
-      </div>
-      <div class="highlight">
-        <div class="highlight-icon">🎓</div>
-        <div>
-          <h4>Student-Led Innovation</h4>
-          <p>Founded by a UNILORIN student proving academics and entrepreneurship coexist</p>
-        </div>
-      </div>
-      <div class="highlight">
-        <div class="highlight-icon">🌍</div>
-        <div>
-          <h4>Kwara's Tech Ambassador</h4>
-          <p>Empowering the next generation of digital leaders in Northern Nigeria</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-visual">
-    <div class="about-img-frame">
-      <span class="about-emoji">👨🏾‍💻</span>
-      <div class="founder-name">Adeyemi Ahmed Abiodun</div>
-      <div class="founder-role">Founder & CEO, HOK Computers</div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="section-tag">Get In Touch</div>
-  <h2 class="section-title">Talk to Us Today</h2>
-
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <h3>We're in Ilorin & Ready to Help 📍</h3>
-      <div class="contact-item">
-        <div class="contact-item-icon">📍</div>
-        <div>
-          <h4>Location</h4>
-          <p>Ilorin, Kwara State, Nigeria</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📞</div>
-        <div>
-          <h4>Phone / WhatsApp</h4>
-          <p>+234 — Contact us to get number</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📧</div>
-        <div>
-          <h4>Email</h4>
-          <p>info@hokcomputers.com</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">🕐</div>
-        <div>
-          <h4>Business Hours</h4>
-          <p>Mon – Sat: 9AM – 6PM</p>
-        </div>
-      </div>
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="eyebrow">Find Us</p>
+      <h2 class="section-title">Get In Touch</h2>
     </div>
-
-    <form class="contact-form" novalidate>
-      <div class="form-row">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" name="firstName" placeholder="e.g. Ibrahim" required>
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" name="lastName" placeholder="e.g. Yusuf" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </div>
-      <div class="form-group">
-        <label>What are you interested in?</label>
-        <select name="interest" required>
-          <option>Buying a Laptop</option>
-          <option>Web Development</option>
-          <option>Graphic Design</option>
-          <option>Digital Marketing</option>
-          <option>Laptop Repair</option>
-          <option>General Enquiry</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea name="message" placeholder="Tell us more about what you need..." required></textarea>
-      </div>
-      <button class="btn-submit" type="submit">Send Message 🚀</button>
-    </form>
+    <div class="contact-grid">
+      <div class="contact-card reveal"><div class="c-icon">📍</div><h4>Location</h4><p>Ilorin, Kwara State, Nigeria</p></div>
+      <div class="contact-card reveal"><div class="c-icon">📞</div><h4>Phone / WhatsApp</h4><p>+234 811 455 0145</p><a href="https://wa.me/2348114550145" target="_blank" class="btn-wa-sm">Open WhatsApp</a></div>
+      <div class="contact-card reveal"><div class="c-icon">🕐</div><h4>Business Hours</h4><p>Mon – Sat, 9AM – 6PM</p></div>
+      
+      <div class="contact-card reveal"><div class="c-icon">📧</div><h4>Email</h4><p>info@hokcomputers.com</p></div>
+    </div>
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps?q=HOK+Computers+Ilorin&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="logo">HOK Computers</div>
-  <p>Home of Khayr · Ilorin, Kwara State, Nigeria · CAC Registered</p>
-  <p class="footer-note">© 2026 HOK Computers. All rights reserved.
-    <a href="https://thegreatcodeadventures.com" target="_blank" rel="noopener noreferrer">Built by The Great QAUNTUM CODER</a> in Ilorin.</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" fill="none" width="30" height="30"><rect width="40" height="40" rx="6" fill="#0d1f14"/><path d="M10 10H16V18H24V10H30V30H24V22H16V30H10V10Z" fill="#25d466"/></svg>
+          <span>HOK Computers</span>
+        </div>
+        <p>Home of Khayr — Ilorin's premier tech store. CAC Registered since 2020.</p>
+        <div class="socials">
+          <a href="https://web.facebook.com/homeofkhayr/?_rdc=1&_rdr#" aria-label="Facebook" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8.5v-2.9h2v-2.2c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.7h2.3l-.4 2.9h-1.9v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hokcomputers/" aria-label="Instagram" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M16.5 7.5h.01"/><path d="M7.5 7.5h9v9h-9z"/></svg>
+          </a>
+          <a href="https://ng.linkedin.com/company/home-of-khayr" aria-label="LinkedIn" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 002.5 6v12a2.5 2.5 0 002.48 2.5h.02A2.5 2.5 0 007.5 18V6a2.5 2.5 0 00-2.52-2.5zM4.5 8.75h1.5V18H4.5V8.75zm4.5 0H10.5v1.35c.2-.35.8-.88 1.75-.88 1.85 0 2.25 1.22 2.25 2.8V18H13.5v-4.75c0-1.14-.02-2.6-1.6-2.6-1.6 0-1.85 1.26-1.85 2.54V18H9V8.75zM5.25 4.5h1.5v1.25h-1.5V4.5z"/></svg>
+          </a>
+          <a href="https://wa.me/2348114550145" aria-label="WhatsApp" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A10.5 10.5 0 003.99 20.16L2 22l1.84-1.19A10.5 10.5 0 1020.5 3.5zm-8.1 15.2a8.7 8.7 0 01-4.66-1.36l-.33-.2-2.76.71.74-2.69-.21-.34A8.7 8.7 0 1112.4 18.7zm3.63-4.85c-.2-.1-1.15-.57-1.32-.64-.18-.08-.31-.12-.44.1-.13.22-.5.64-.61.77-.12.13-.24.14-.45.05-.2-.1-.84-.31-1.6-.99-.59-.52-.98-1.16-1.1-1.38-.12-.22-.01-.34.09-.45.09-.1.2-.23.3-.34.1-.12.14-.2.21-.34.08-.13.04-.24-.02-.34-.07-.1-.5-.98-.69-1.35-.18-.36-.35-.31-.48-.32-.13-.01-.28-.01-.43-.01-.15 0-.34.07-.52.33-.18.26-.7.89-.7 2.16 0 1.27.58 2.04.66 2.18.08.14 1.4 2.14 3.4 2.99.47.2.86.31 1.15.4.48.15.9.13 1.24.08.38-.06 1.15-.44 1.31-.94.15-.5.15-.93.11-1.02-.05-.09-.19-.15-.4-.26z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Products</h5><a href="products.html?cat=laptop">Laptops</a><a href="products.html?cat=phone">Phones</a><a href="products.html?cat=accessory">Accessories</a></div>
+        <div class="footer-col"><h5>Services</h5><a href="#services">Repairs</a><a href="#services">Software</a><a href="#services">Web Dev</a></div>
+        <div class="footer-col"><h5>Company</h5><a href="#home">About HOK</a><a href="#contact">Contact</a><a href="https://wa.me/2348114550145">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 HOK Computers. Ilorin, Kwara State, Nigeria.</p>
+      <p>Built by <a href="https://my-personal-portfolio-the-quantum-c.vercel.app/">The Quantum Developer</a></p>
+    </div>
+  </div>
 </footer>
 
-  <script src="app.js"></script>
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header"><h3>Cart <span id="cartHeaderCount"></span></h3><button class="close-btn" id="closeCart">✕</button></div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty" id="cartEmpty"><span>🛒</span><p>Your cart is empty</p><a href="products.html">Browse Products</a></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+    <div class="cart-actions">
+      <button class="btn-wa full" onclick="checkoutWhatsApp()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L.054 23.447a.5.5 0 00.61.61l5.595-1.478A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.802 9.802 0 01-5.031-1.385l-.36-.214-3.733.985.997-3.617-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Checkout via WhatsApp
+      </button>
+      <button class="btn-outline full" onclick="showInstallmentModal()">Installment Plan</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="product-modal" id="productModal">
+  <button class="close-btn modal-close" id="closeModal">✕</button>
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<!-- INSTALLMENT MODAL -->
+<div class="modal-overlay" id="installmentOverlay"></div>
+<div class="installment-modal" id="installmentModal">
+  <button class="close-btn" onclick="closeInstallmentModal()">✕</button>
+  <h3>Installment Plan</h3>
+  <p class="modal-sub">Pay over time. We'll confirm details on WhatsApp.</p>
+  <div class="form-group"><label>Full Name</label><input type="text" id="instName" placeholder="Your full name" /></div>
+  <div class="form-group"><label>Phone Number</label><input type="tel" id="instPhone" placeholder="08012345678" /></div>
+  <div class="form-group"><label>Duration</label><select id="instDuration"><option value="2 months">2 Months</option><option value="3 months">3 Months</option><option value="6 months">6 Months</option></select></div>
+  <div class="form-group"><label>Initial Deposit (Optional)</label><input type="text" id="instDeposit" placeholder="e.g. ₦50,000" /></div>
+  <button class="btn-wa full" onclick="submitInstallment()">Send Installment Request</button>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+<script>
+  // Render 6 featured products on homepage
+  document.addEventListener('DOMContentLoaded', () => {
+    const featured = products.slice(0, 6);
+    const grid = document.getElementById('featuredGrid');
+    if (grid) grid.innerHTML = featured.map((p, i) => buildProductCard(p, i)).join('');
+    attachCardEvents(grid);
+    initScrollReveal();
+  });
+</script>
 </body>
 </html>
+
